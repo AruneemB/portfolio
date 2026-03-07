@@ -204,6 +204,7 @@ h1 {
 .category-title {
     font-size: 2.5rem;
     font-weight: bold;
+    display: inline-block;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -500,10 +501,10 @@ footer {
 }
 
 /* Gradient classes */
-.gradient-blue { background: linear-gradient(to right, #3b82f6, #22d3ee); }
-.gradient-purple { background: linear-gradient(to right, #a855f7, #ec4899); }
-.gradient-green { background: linear-gradient(to right, #10b981, #059669); }
-.gradient-amber { background: linear-gradient(to right, #f59e0b, #f97316); }
+.gradient-blue { background-image: linear-gradient(to right, #3b82f6, #22d3ee); }
+.gradient-purple { background-image: linear-gradient(to right, #a855f7, #ec4899); }
+.gradient-green { background-image: linear-gradient(to right, #10b981, #059669); }
+.gradient-amber { background-image: linear-gradient(to right, #f59e0b, #f97316); }
 
 /* Fade in for newly added projects */
 .fade-in-new {
