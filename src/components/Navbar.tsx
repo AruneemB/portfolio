@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { GitHubEmbed } from './GitHubEmbed';
 
 export const Navbar: React.FC = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -14,7 +15,9 @@ export const Navbar: React.FC = () => {
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="nav-content">
-                <a href="#" className="nav-logo">A. Bhowmick</a>
+                <div className="nav-logo">
+                    <GitHubEmbed />
+                </div>
                 <div className="nav-links">
                     <a href="#ml-section" className="nav-ml">ML</a>
                     <a href="#quant-section" className="nav-quant">Quant</a>

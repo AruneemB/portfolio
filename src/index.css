@@ -347,12 +347,73 @@ footer {
 }
 
 .nav-logo {
-    font-family: var(--font-serif);
-    font-size: 1.25rem;
-    font-weight: 500;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: var(--text-primary);
-    letter-spacing: -0.02em;
+}
+
+.github-embed {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-primary);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: 999px;
+    padding: 0.2rem;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    max-width: 44px; /* Slightly larger for the image + padding */
+    height: 44px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.github-embed:hover {
+    max-width: 280px;
+    padding-right: 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-hover);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.github-embed .profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.github-embed .info {
+    margin-left: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease 0.1s;
+}
+
+.github-embed:hover .info {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.github-embed .name {
+    font-family: var(--font-serif);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.github-embed .blurb {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
 .nav-links {
