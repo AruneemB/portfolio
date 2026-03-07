@@ -26,7 +26,7 @@ export const CategorySection: React.FC<CategorySectionProps> = ({ id, title, sub
     const displayedProjects = showAll ? projects : shuffledProjects.slice(0, 6);
 
     return (
-        <div className="category-section" id={`${id}-section`}>
+        <div className={`category-section ${id}`} id={`${id}-section`}>
             <div className="category-header">
                 <h2 className="category-title">{title}</h2>
                 <p className="category-subtitle">{subtitle}</p>

@@ -18,6 +18,12 @@
     --accent-purple: #a855f7;
     --accent-green: #10b981;
     --accent-amber: #f59e0b;
+
+    /* Lightened Accents for Hover */
+    --accent-blue-light: #93c5fd;
+    --accent-purple-light: #d8b4fe;
+    --accent-green-light: #6ee7b7;
+    --accent-amber-light: #fcd34d;
 }
 
 * {
@@ -368,10 +374,46 @@ footer {
     color: var(--text-primary);
 }
 
+.nav-links a.nav-ml:hover { color: var(--accent-blue-light); }
+.nav-links a.nav-quant:hover { color: var(--accent-purple-light); }
+.nav-links a.nav-swe:hover { color: var(--accent-green-light); }
+.nav-links a.nav-phil:hover { color: var(--accent-amber-light); }
+
 @media (max-width: 640px) {
     .nav-links { display: gap: 1rem; }
     .nav-logo { font-size: 1.1rem; }
 }
+
+/* Category Section Specifics */
+.category-section.ml .category-line { background: var(--accent-blue); }
+.category-section.quant .category-line { background: var(--accent-purple); }
+.category-section.swe .category-line { background: var(--accent-green); }
+.category-section.phil .category-line { background: var(--accent-amber); }
+
+/* Project Card Hover Accents */
+.category-section.ml .project-card:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+}
+.category-section.ml .project-card:hover .project-title { color: var(--accent-blue-light); }
+
+.category-section.quant .project-card:hover {
+    border-color: rgba(168, 85, 247, 0.3);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);
+}
+.category-section.quant .project-card:hover .project-title { color: var(--accent-purple-light); }
+
+.category-section.swe .project-card:hover {
+    border-color: rgba(16, 185, 129, 0.3);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
+}
+.category-section.swe .project-card:hover .project-title { color: var(--accent-green-light); }
+
+.category-section.phil .project-card:hover {
+    border-color: rgba(245, 158, 11, 0.3);
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1);
+}
+.category-section.phil .project-card:hover .project-title { color: var(--accent-amber-light); }
 
 /* Utilities */
 .hidden { display: none; }
