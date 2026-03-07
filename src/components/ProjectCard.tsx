@@ -3,16 +3,15 @@ import { Project } from '../data/projects';
 
 interface ProjectCardProps {
     project: Project;
-    categoryId: string;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project, categoryId }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     return (
-        <a href={project.url} target="_blank" rel="noopener noreferrer" className={`project-card ${categoryId}-card`}>
+        <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-card">
             <div className="project-header">
                 <h3 className="project-title">{project.title}</h3>
-                <svg className="external-link" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2.5">
+                    <path d="M7 17L17 7m0 0H8m9 0v9" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
             <p className="project-description">{project.description}</p>

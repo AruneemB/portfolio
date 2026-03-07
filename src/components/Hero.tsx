@@ -8,15 +8,15 @@ export const Hero: React.FC = () => {
 
             <div className="hero-content">
                 <div className="badge">
-                    <svg className="sparkle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm3 2l3 3-3 3m5 2h4"></path>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M12 2v20M2 12h20" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     <span>Portfolio & Projects</span>
                 </div>
 
                 <h1>
                     Aruneem Bhowmick<br />
-                    <span className="hero-gradient-text">Think. Prove. Apply.</span>
+                    <span className="hero-tagline">Think. Prove. Apply.</span>
                 </h1>
 
                 <p className="hero-subtitle">
@@ -25,8 +25,8 @@ export const Hero: React.FC = () => {
 
                 <a href="#projects" className="cta-button">
                     Explore Projects
-                    <svg className="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <path d="M5 12h14m-7-7l7 7-7 7" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </a>
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 export const Footer: React.FC = () => {
     return (
         <footer>
-            <p className="footer-text">Last Updated Oct 2025 • Built with React, TypeScript & Vite</p>
+            <p className="footer-text">Last Updated March 2026 • Built with React, TypeScript & Vite</p>
             <div className="footer-links">
                 <a href="https://www.kaggle.com/aruneembhowmick" target="_blank" rel="noopener noreferrer">
                     <svg className="footer-icon" fill="currentColor" viewBox="0 0 24 24">
