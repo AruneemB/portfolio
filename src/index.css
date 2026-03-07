@@ -1,6 +1,7 @@
 :root {
     /* Fonts */
-    --font-serif: 'Lora', serif;
+    --font-serif: 'Noto Serif', serif;
+    --font-brand: 'Lora', serif;
     --font-sans: 'Inter', sans-serif;
 
     /* Colors - Noir Minimalist Palette */
@@ -48,17 +49,19 @@ html {
 /* Typography Hierarchy */
 h1, h2, h3 {
     font-family: var(--font-serif);
-    font-weight: 500;
     letter-spacing: -0.02em;
 }
 
 h1 {
+    font-family: var(--font-brand);
     font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 500;
     line-height: 1;
     margin-bottom: 2rem;
 }
 
 .hero-tagline {
+    font-family: var(--font-serif);
     font-size: 0.5em;
     display: block;
     margin-top: 1rem;
@@ -70,7 +73,13 @@ h1 {
 
 h2 {
     font-size: 2.25rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 p {
@@ -187,6 +196,13 @@ p {
     align-items: center;
     gap: 1rem;
     margin-top: 1.5rem;
+}
+
+.project-count {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--text-muted);
 }
 
 .category-line {
@@ -401,7 +417,7 @@ footer {
 }
 
 .github-embed .name {
-    font-family: var(--font-serif);
+    font-family: var(--font-brand);
     font-size: 0.9375rem;
     font-weight: 500;
     line-height: 1.2;
