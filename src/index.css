@@ -5,20 +5,20 @@
     --font-sans: 'Inter', sans-serif;
 
     /* Colors - Noir Minimalist Palette */
-    --bg-main: #050505;
-    --bg-elevated: #111111;
-    --border-subtle: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(255, 255, 255, 0.15);
+    --bg-main: #0f0f0f;
+    --bg-elevated: #1f1f1f;
+    --border-subtle: rgba(255, 255, 255, 0.15);
+    --border-hover: rgba(255, 255, 255, 0.25);
     
     --text-primary: #ffffff;
-    --text-secondary: #a1a1a1;
-    --text-muted: #666666;
+    --text-secondary: #d1d1d1;
+    --text-muted: #999999;
     
-    /* Accents - Very Muted */
-    --accent-blue: #3b82f6;
-    --accent-purple: #a855f7;
-    --accent-green: #10b981;
-    --accent-amber: #f59e0b;
+    /* Accents - Brighter and more vibrant */
+    --accent-blue: #5599ff;
+    --accent-purple: #c084fc;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
 
     /* Lightened Accents for Hover */
     --accent-blue-light: #93c5fd;
@@ -103,7 +103,7 @@ p {
     width: 30vw;
     height: 30vw;
     filter: blur(120px);
-    opacity: 0.1; /* Reduced intensity */
+    opacity: 0.15; /* Increased intensity from 0.1 for a brighter look */
     z-index: 0;
     pointer-events: none;
 }
@@ -407,8 +407,8 @@ footer {
 }
 
 .github-embed:hover {
-    width: 225px; /* Reduced from 240px for a "medium" fit */
-    padding-right: 1.5rem; /* More space at the end */
+    width: 225px;
+    padding-right: 1.5rem;
     background: rgba(255, 255, 255, 0.05);
     border-color: var(--border-hover);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
