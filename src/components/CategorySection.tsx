@@ -23,7 +23,7 @@ export const CategorySection: React.FC<CategorySectionProps> = ({ id, title, sub
         setShuffledProjects(shuffled);
     }, [projects]);
 
-    const displayedProjects = showAll ? projects : shuffledProjects.slice(0, 6);
+    const displayedProjects = showAll ? shuffledProjects : shuffledProjects.slice(0, 6);
 
     return (
         <div className={`category-section ${id}`} id={`${id}-section`}>

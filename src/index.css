@@ -385,35 +385,30 @@ footer {
     white-space: nowrap;
 }
 
-.github-embed:hover {
-    max-width: 280px;
-    padding-right: 1.25rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-color: var(--border-hover);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+@media (hover: hover) {
+    .github-embed:hover {
+        max-width: 280px;
+        padding-right: 1.25rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-color: var(--border-hover);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .github-embed:hover .info {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.github-embed .profile-pic {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.github-embed .info {
-    margin-left: 0.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.3s ease 0.1s;
-}
-
-.github-embed:hover .info {
-    opacity: 1;
-    transform: translateX(0);
+@media (hover: none), (max-width: 640px) {
+    .github-embed {
+        max-width: 280px;
+        padding-right: 1rem;
+    }
+    .github-embed .info {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .github-embed .name {
