@@ -465,7 +465,7 @@ footer {
 .nav-links a.nav-phil:hover { color: var(--accent-amber-light); }
 
 @media (max-width: 640px) {
-    .nav-links { display: gap: 1rem; }
+    .nav-links { display: flex; gap: 1rem; }
     .nav-logo { font-size: 1.1rem; }
 }
 
